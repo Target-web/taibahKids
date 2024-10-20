@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="جمعية اطفال طيبة - منظمة خيرية جديدة في المدينة المنورة تهدف إلى رعاية ودعم الأطفال">
-    <meta name="keywords" content="جمعية اطفال طيبة, المدينة المنورة, منظمة خيرية, رعاية الأطفال, السعودية">
-    <title>جمعية اطفال طيبة | Taibah Kids Organization</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Tajawal', sans-serif;
-        }
-
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                        url('https://img.freepik.com/free-photo/group-kids-friends-arm-around-sitting-together_1150-3907.jpg?t=st=1728412007~exp=1728415607~hmac=0454639405b7bedc77c71c5583072841f31076cf30db66229abb24b4f5bd3a23&w=996');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .program-card {
-            transition: all 0.3s ease;
-        }
-
-        .program-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        .static-bg-section {
-            position: relative;
-            background-image: url('https://img.freepik.com/free-photo/children-group_23-2148107404.jpg?t=st=1728412109~exp=1728415709~hmac=84e0e09914cbc60f48d5193b72f47561e8517125b494a6f737e7bc89dde3f40f&w=996');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .static-bg-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
-            z-index: 1;
-        }
-
-        .static-bg-section > * {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
-</head>
-<body class="bg-yellow-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4">
-                            <img src="https://i.ibb.co/yBy05Lw/logo-Artboard-3-5x.png" alt="Logo" class="h-16 w-16 ml-2 ">
-                        </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="جمعية اطفال طيبة - منظمة خيرية جديدة في المدينة المنورة تهدف إلى رعاية ودعم الأطفال">
+        <meta name="keywords" content="جمعية اطفال طيبة, المدينة المنورة, منظمة خيرية, رعاية الأطفال, السعودية">
+        <title>جمعية اطفال طيبة | Taibah Kids Organization</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                font-family: 'Tajawal', sans-serif;
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+            }
+    
+            .hero-section {
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                            url('https://img.freepik.com/free-photo/group-kids-friends-arm-around-sitting-together_1150-3907.jpg?t=st=1728412007~exp=1728415607~hmac=0454639405b7bedc77c71c5583072841f31076cf30db66229abb24b4f5bd3a23&w=996');
+                background-size: cover;
+                background-position: center;
+            }
+    
+            .program-card {
+                transition: all 0.3s ease;
+            }
+    
+            .program-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+    
+            .static-bg-section {
+                position: relative;
+                background-image: url('https://img.freepik.com/free-photo/children-group_23-2148107404.jpg?t=st=1728412109~exp=1728415709~hmac=84e0e09914cbc60f48d5193b72f47561e8517125b494a6f737e7bc89dde3f40f&w=996');
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            .static-bg-section::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+                z-index: 1;
+            }
+    
+            .static-bg-section > * {
+                position: relative;
+                z-index: 2;
+            }
+    
+            /* Mobile-specific styles */
+            @media (max-width: 768px) {
+                .container {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+                
+                .hero-section {
+                    padding: 2rem 1rem;
+                }
+                
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .roadmap .absolute {
+                    display: none;
+                }
+                
+                .roadmap .flex {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                
+                .roadmap .w-5\/12 {
+                    width: 100%;
+                    padding: 0;
+                    text-align: left;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-yellow-50">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg fixed w-full z-10">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <a href="#" class="flex items-center py-4">
+                                <img src="https://i.ibb.co/yBy05Lw/logo-Artboard-3-5x.png" alt="Logo" class="h-16 w-16 ml-2 ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="#about" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">من نحن</a>
+                        <a href="#vision" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">رؤيتنا</a>
+                        <a href="#future-programs" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">برامجنا المستقبلية</a>
+                        <a href="#roadmap" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">خارطتنا</a>
+                        <a href="#contact" class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition duration-300">تواصل معنا</a>
                     </div>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#about" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">من نحن</a>
-                    <a href="#vision" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">رؤيتنا</a>
-                    <a href="#future-programs" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">برامجنا المستقبلية</a>
-                    <a href="#roadmap" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">خارطتنا</a>
-                    <a href="#contact" class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition duration-300">تواصل معنا</a>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <section class="hero-section min-h-screen flex items-center justify-center text-white">
+            <div class="text-center px-4" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">جمعية اطفال طيبة</h1>
+                <p class="text-xl md:text-2xl mb-10">نبدأ رحلتنا لبناء مستقبل أفضل لأطفال المدينة المنورة</p>
+                <div class="space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#about" class="inline-block bg-white text-purple-500 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300">تعرف علينا</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfulJdMtCghUSKo20PrxmmRwO_B9CY3sN5ZFxaleqlauqke8g/viewform" target="_blank" class="inline-block bg-purple-500 text-white font-bold py-3 px-6 rounded-full hover:bg-purple-600 transition duration-300">انضم لفريقنا!</a>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section h-screen flex items-center justify-center text-white">
-        <div class="text-center" data-aos="fade-up">
-            <h1 class="text-6xl font-bold mb-6">جمعية اطفال طيبة</h1>
-            <p class="text-2xl mb-10">نبدأ رحلتنا لبناء مستقبل أفضل لأطفال المدينة المنورة</p>
-            <div class="space-x-4">
-                <a href="#about" class="bg-white text-purple-500 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition duration-300">تعرف علينا</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfulJdMtCghUSKo20PrxmmRwO_B9CY3sN5ZFxaleqlauqke8g/viewform" target="_blank" class="bg-purple-500 text-white font-bold py-4 px-8 rounded-full hover:bg-purple-600 transition duration-300">انضم لفريقنا!</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
