@@ -447,453 +447,4 @@
     });
 </script>
 </body>
-</html><!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="جمعية اطفال طيبة - منظمة خيرية جديدة في المدينة المنورة تهدف إلى رعاية ودعم الأطفال">
-    <meta name="keywords" content="جمعية اطفال طيبة, المدينة المنورة, منظمة خيرية, رعاية الأطفال, السعودية">
-    <title>جمعية اطفال طيبة | Taibah Kids Organization</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Tajawal', sans-serif;
-        }
-
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                        url('https://img.freepik.com/free-photo/group-kids-friends-arm-around-sitting-together_1150-3907.jpg?t=st=1728412007~exp=1728415607~hmac=0454639405b7bedc77c71c5583072841f31076cf30db66229abb24b4f5bd3a23&w=996');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .program-card {
-            transition: all 0.3s ease;
-        }
-
-        .program-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        .static-bg-section {
-            position: relative;
-            background-image: url('https://img.freepik.com/free-photo/children-group_23-2148107404.jpg?t=st=1728412109~exp=1728415709~hmac=84e0e09914cbc60f48d5193b72f47561e8517125b494a6f737e7bc89dde3f40f&w=996');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .static-bg-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
-            z-index: 1;
-        }
-
-        .static-bg-section > * {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
-</head>
-<body class="bg-yellow-50">
-   <!-- Navigation -->
-<nav class="bg-white shadow-lg fixed w-full z-10">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex space-x-7">
-                <a href="#" class="flex items-center py-4">
-                    <img src="https://i.ibb.co/yBy05Lw/logo-Artboard-3-5x.png" alt="Logo" class="h-16 w-16 ml-2">
-                </a>
-            </div>
-
-            <!-- Hamburger Menu for Mobile -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button" class="text-gray-800 hover:text-purple-500 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Links (Hidden on Mobile) -->
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="#about" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">من نحن</a>
-                <a href="#vision" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">رؤيتنا</a>
-                <a href="#future-programs" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">برامجنا المستقبلية</a>
-                <a href="#roadmap" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">خارطتنا</a>
-                <a href="#contact" class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition duration-300">تواصل معنا</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mobile Menu (Hidden by Default) -->
-    <div id="mobile-menu" class="hidden md:hidden">
-        <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">من نحن</a>
-        <a href="#vision" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">رؤيتنا</a>
-        <a href="#future-programs" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">برامجنا المستقبلية</a>
-        <a href="#roadmap" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">خارطتنا</a>
-        <a href="#contact" class="block py-2 px-4 bg-purple-500 text-white hover:bg-purple-600">تواصل معنا</a>
-    </div>
-</nav>
-
-    
-        <!-- Hero Section -->
-        <section class="hero-section min-h-screen flex items-center justify-center text-white">
-            <div class="text-center px-4" data-aos="fade-up">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">جمعية اطفال طيبة</h1>
-                <p class="text-xl md:text-2xl mb-10">نبدأ رحلتنا لبناء مستقبل أفضل لأطفال المدينة المنورة</p>
-                <div class="space-y-4 md:space-y-0 md:space-x-4">
-                    <a href="#about" class="inline-block bg-white text-purple-500 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300">تعرف علينا</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfulJdMtCghUSKo20PrxmmRwO_B9CY3sN5ZFxaleqlauqke8g/viewform" target="_blank" class="inline-block bg-purple-500 text-white font-bold py-3 px-6 rounded-full hover:bg-purple-600 transition duration-300">انضم لفريقنا!</a>
-                </div>
-            </div>
-        </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div data-aos="fade-right">
-                    <h2 class="text-4xl font-bold mb-8 text-purple-600">من نحن</h2>
-                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                        جمعية اطفال طيبة هي مؤسسة خيرية جديدة تأسست في المدينة المنورة بهدف تحسين حياة الأطفال وضمان مستقبل أفضل لهم. نحن في بداية رحلتنا ونتطلع إلى إحداث تأثير إيجابي في مجتمعنا. ترخيص رقم: 1000580600
-                    </p>
-                </div>
-                <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
-                    <img src="https://img.freepik.com/free-photo/cute-kids-playing-with-flying-goggles_23-2150197748.jpg?t=st=1728412146~exp=1728415746~hmac=62403f91b25cde1dc594a3fb7e1d63ff045a587e2e70f3204ad1b5d86387f696&w=360" alt="صورة 1" class="rounded-lg shadow-lg">
-                    <img src="https://img.freepik.com/free-photo/front-view-children-playing-together-kindergarten_23-2148633303.jpg?t=st=1728412126~exp=1728415726~hmac=eaddab9094bffd686a896dd047eed8580d391fabe981fe72152346c3d5595410&w=996" alt="صورة 2" class="rounded-lg shadow-lg mt-8">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Get Involved Section -->
-<section id="get-involved" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-yellow-100 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-4 text-purple-500">العمر المستهدف</h3>
-                <p class="text-gray-600 mb-6 text-2xl" >0 - 12 سنة</p>
-           </div>
-            <div class="bg-yellow-100 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-2xl font-bold mb-4 text-purple-500">المنطقة الاساسية</h3>
-                <p class="text-gray-600 mb-6 text-2xl ">المدينة المنورة</p>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-    <!-- Vision Section -->
-    <section id="vision" class="py-20 bg-purple-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 text-purple-600" data-aos="fade-up">اهدافنا</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">توعية المجتمع</h3>
-                    <p class="text-gray-600">توعيـــة المجتمع فـــي اهمية
-                        مرحلة الطفولة</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">الدعم النفسي</h3>
-                    <p class="text-gray-600">نهدف إلى توفير بيئة داعمة ومحفزة لنمو الأطفال نفسياً واجتماعياً</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">تنمية المواهب</h3>
-                    <p class="text-gray-600">نطمح لاكتشاف وتطوير مواهب الأطفال في مختلف المجالات</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">الاهتمام بالايتام</h3>
-                    <p class="text-gray-600">تعزيـــز الشـــعور بالأمـــان لدى
-                        الاطفال الايتام</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">تاهيل المختصين</h3>
-                    <p class="text-gray-600">تأهيل العامـــلين المتخصصين
-                        في مجال مرحلة الطفولة</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-500">تعزيز القدرات</h3>
-                    <p class="text-gray-600">تعزيز قـــدرات الطفل في الجوانب
-                        المعرفية والسلوكية</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future Programs Section -->
-    <section id="future-programs" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 text-purple-600" data-aos="fade-up">انشطتنا</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="program-card bg-yellow-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
-                    <img src="https://img.freepik.com/free-photo/smiley-little-boy-reading-home_23-2148355151.jpg?t=st=1728412164~exp=1728415764~hmac=9cccc4e32709b25cc549d5b653db23ff609fe194147f64f9c021f4789007c076&w=996" alt="التعليم" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4 text-purple-600">خدمات الاطفال</h3>
-                        <p class="text-gray-600 mb-4">خدمـــات الأطفـــال الاجتماعيـــة والتعليمية
-                            والثقافيـة والترفيهية
-                            </p>
-                    </div>
-                </div>
-                <div class="program-card bg-yellow-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://img.freepik.com/free-photo/children-listening-music-with-headphones_23-2148107464.jpg?t=st=1728412186~exp=1728415786~hmac=cd6050ef7ea88bf908ce9f88daddf21241204d1b3c4d5be43e7fcfa2b5233713&w=996" alt="الفنون" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4 text-purple-600">تاهيل الاخصائين</h3>
-                        <p class="text-gray-600 mb-4">تنميـــة وتأهيــل المتعاملين مع الأطفال
-                            ورعايتهم</p>
-                    </div>
-                </div>
-                <div class="program-card bg-yellow-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://img.freepik.com/free-photo/full-shot-kids-holding-medals_23-2149351835.jpg?t=st=1728412384~exp=1728415984~hmac=21e5dced93651c1fb5505b1b1fe36845990eb24f5cfe4c7001dd9ced42c81448&w=360" alt="الرياضة" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4 text-purple-600">بناء بيئة مثالية للطفل</h3>
-                        <p class="text-gray-600 mb-4">بناء الكيـــــانـــات الخاصــة بتنمية الطفل</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Team Section -->
-    <section id="our-team" class="py-20 bg-purple-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 text-purple-600" data-aos="fade-up">برامج الجمعية</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                    <img src="https://img.freepik.com/free-photo/diverse-kids-reading-books_53876-146406.jpg?t=st=1729446338~exp=1729449938~hmac=11887c029e3d3c0947afb7bcf7ddfc0431e6a786b6b431da61bdbd47e24583fe&w=740" alt="كيدز العلوم" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز العلوم</h3>
-                    <p class="text-gray-600">يهدف إلى تشجيع حب الأطفال للعلوم من خلال تجارب وأنشطة تعليمية ممتعة</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://img.freepik.com/free-photo/school-boy-holding-delicious-apple_23-2148764015.jpg?t=st=1729446378~exp=1729449978~hmac=b3483b36c6e1062d42081deab7cd1cace5e57738a2b589aa7ccea117a1385413&w=996" alt="كيدز المعرفة" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز المعرفة</h3>
-                    <p class="text-gray-600">برنامج تعليمي يهدف إلى تعزيز المعرفة والتعلم النشط بين الأطفال من خلال ورش العمل والأنشطة التفاعلية</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://img.freepik.com/free-photo/portrait-boy-checking-his-blood-pressure_23-2147905827.jpg?t=st=1729446491~exp=1729450091~hmac=36c52171ddeacb543a567e48fc4a14afdd7ff486ea1502047cd4e38deaf65547&w=360" alt="كيدز الصحة" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز الصحة</h3>
-                    <p class="text-gray-600">برنامج یهتم بصحة الأطفال من خلال تشجيعهم على ممارسة الرياضة وتناول الطعام الصحي.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                    <img src="https://img.freepik.com/free-photo/happy-girls-stacking-their-hands-playing-against-sky_23-2148163915.jpg?t=st=1729446632~exp=1729450232~hmac=0010fccc41901042264389b8de20e849a214193f0105108151ee5bcf518fa2b5&w=360" alt="كيدز القيم" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز القيم</h3>
-                    <p class="text-gray-600">برنامج يسعى لنشر وتعزيز القيم الإيجابية والأخلاقيات بين الأطفال من خلال قصص وأنشطة تربوية.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://img.freepik.com/free-photo/child-painting-by-water-colors-paper-lying-floor_23-2148037909.jpg?t=st=1729446616~exp=1729450216~hmac=274568d01dcd1117e9a9b7338f8fe775ade272f4ec8a489599d001e7279c28bd&w=740" alt="كيدز الفنون" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز الفنون</h3>
-                    <p class="text-gray-600">يتناول هذا البرنامج الجانب الإبداعي والفني للأطفال من خلال ورش الفنون والموسيقى والرسم</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://img.freepik.com/free-photo/teacher-helping-kids-classroom_23-2148892768.jpg?w=740&t=st=1710943346~exp=1710943946~hmac=3f7a47c42f49cd4fcc85cfd8b9f5692c8be3a92f15e504605fb05d0fb30e146f" alt="كيدزانيا" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-bold mb-2 text-purple-500">كيدزانيا</h3>
-                    <p class="text-gray-600">مسارات تدريبية للأمهات والمتعاملين مع الأطفال لتعليمهم أحدث الأساليب للتعامل مع الطفولة</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-<!-- Partnerships Section -->
-<section id="partnership" class="py-20 bg-transparent static-bg-section">
-    <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-16 text-white" data-aos="fade-up">شركائنا</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-4 text-white">المدارس</h3>
-                <p class="text-gray-300">الابتدائية و المتوسطة</p>
-            </div>
-            <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-2xl font-bold mb-4 text-white">الاخصائيين</h3>
-                <p class="text-gray-300">التربويين والباحثين في مجال الاطفال</p>
-            </div>
-            <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-2xl font-bold mb-4 text-white">الاباء والامهات</h3>
-                <p class="text-gray-300">المهتمين بتطوير ابنائهم</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="roadmap" class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-16 text-purple-600" data-aos="fade-up">خارطة الطريق</h2>
-        <div class="relative">
-            <div class="absolute h-full w-1 bg-purple-200 left-1/2 transform -translate-x-1/2"></div>
-            <div class="space-y-12">
-                <!-- First element (right) -->
-                <div class="flex items-center justify-end" data-aos="fade-left">
-                    <div class="w-5/12 pr-8 text-right">
-                        <h3 class="text-xl font-bold mb-2 text-purple-500">الربع الأول 2025</h3>
-                        <p class="text-gray-600">إطلاق برنامج الدروس التقوية</p>
-                    </div>
-                    <div class="w-4 h-4 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                </div>
-                
-                <!-- Second element (left) -->
-                <div class="flex items-center justify-start" data-aos="fade-right">
-                    <div class="w-4 h-4 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                    <div class="w-5/12 pl-8 text-left">
-                        <h3 class="text-xl font-bold mb-2 text-purple-500">الربع الثاني 2025</h3>
-                        <p class="text-gray-600">بدء الشراكات مع المدارس المحلية</p>
-                    </div>
-                </div>
-                
-                <!-- Third element (right) -->
-                <div class="flex items-center justify-end" data-aos="fade-left">
-                    <div class="w-5/12 pr-8 text-right">
-                        <h3 class="text-xl font-bold mb-2 text-purple-500">الربع الثالث 2025</h3>
-                        <p class="text-gray-600">إطلاق برنامج الورش الفنية</p>
-                    </div>
-                    <div class="w-4 h-4 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                </div>
-                
-                <!-- Fourth element (left) -->
-                <div class="flex items-center justify-start" data-aos="fade-right">
-                    <div class="w-4 h-4 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                    <div class="w-5/12 pl-8 text-left">
-                        <h3 class="text-xl font-bold mb-2 text-purple-500">الربع الرابع 2025</h3>
-                        <p class="text-gray-600">تنظيم أول فعالية كبرى لجمع التبرعات</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-20 bg-purple-50">
-    <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-16 text-purple-600" data-aos="fade-up">تواصل معنا</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-right">
-                <form class="space-y-6">
-                    <div>
-                        <label class="block text-gray-700 mb-2">الاسم</label>
-                        <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300" required>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">البريد الإلكتروني</label>
-                        <input type="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300" required>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">الموضوع</label>
-                        <select class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300">
-                            <option>استفسار عام</option>
-                            <option>التطوع</option>
-                            <option>الشراكات</option>
-                            <option>اقتراح</option>
-                            <option>أخرى</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">الرسالة</label>
-                        <textarea class="w-full p-3 border rounded-lg h-32 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition duration-300" required></textarea>
-                    </div>
-                    <button type="submit" class="bg-purple-500 text-white px-8 py-3 rounded-lg hover:bg-purple-600 transition duration-300 w-full">إرسال</button>
-                </form>
-            </div>
-            <div class="space-y-8" data-aos="fade-left">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-purple-600">معلومات التواصل</h3>
-                    <div class="space-y-4">
-                        <p class="flex items-center text-gray-600">
-                            <span class="ml-3">📍</span> المدينة المنورة، المملكة العربية السعودية
-                        </p>
-                        <p class="flex items-center text-gray-600">
-                            <span class="ml-3">📧</span> info@taibachildren.org
-                        </p>
-                        <p class="flex items-center text-gray-600">
-                            <span class="ml-3">📱</span> +966 50 XXX XXXX
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-purple-600">ساعات العمل</h3>
-                    <p class="text-gray-600">الأحد - الخميس: 9:00 صباحاً - 3:00 مساءً</p>
-                    <p class="text-gray-600">الجمعة - السبت: مغلق</p>
-                </div>
-                <div class="bg-yellow-100 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-purple-600">تابعنا على وسائل التواصل الاجتماعي</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-purple-500 hover:text-purple-600">تويتر</a>
-                        <a href="#" class="text-purple-500 hover:text-purple-600">انستغرام</a>
-                        <a href="#" class="text-purple-500 hover:text-purple-600">فيسبوك</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Footer -->
-<footer class="bg-purple-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">جمعية اطفال طيبة</h3>
-                <p class="text-gray-300">نبدأ رحلتنا لبناء مستقبل أفضل لأطفالنا</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
-                <ul class="space-y-2">
-                    <li><a href="#about" class="text-gray-300 hover:text-white">من نحن</a></li>
-                    <li><a href="#vision" class="text-gray-300 hover:text-white">رؤيتنا</a></li>
-                    <li><a href="#future-programs" class="text-gray-300 hover:text-white">برامجنا المستقبلية</a></li>
-                    <li><a href="#get-involved" class="text-gray-300 hover:text-white">شارك معنا</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">تواصل معنا</h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300">المدينة المنورة، السعودية</li>
-                    <li class="text-gray-300">ترخيص رقم: 1000580600</li>
-                    <li class="text-gray-300">info@taibahkids.org.sa</li>
-                    <li class="text-gray-300">+966 50 XXX XXXX</li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-t border-purple-800 pt-8 text-center">
-            <p class="text-gray-300">&copy; 2024 جمعية اطفال طيبة. جميع الحقوق محفوظة</p>
-        </div>
-    </div>
-</footer>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    // Initialize AOS
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
-<script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
-</body>
 </html>
