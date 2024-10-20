@@ -62,27 +62,46 @@
     </style>
 </head>
 <body class="bg-yellow-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4">
-                            <img src="https://i.ibb.co/yBy05Lw/logo-Artboard-3-5x.png" alt="Logo" class="h-16 w-16 ml-2 ">
-                        </a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#about" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">من نحن</a>
-                    <a href="#vision" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">رؤيتنا</a>
-                    <a href="#future-programs" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">برامجنا المستقبلية</a>
-                    <a href="#get-involved" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">شارك معنا</a>
-                    <a href="#contact" class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition duration-300">تواصل معنا</a>
-                </div>
+   <!-- Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex space-x-7">
+                <a href="#" class="flex items-center py-4">
+                    <img src="https://i.ibb.co/yBy05Lw/logo-Artboard-3-5x.png" alt="Logo" class="h-16 w-16 ml-2">
+                </a>
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-800 hover:text-purple-500 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Links (Hidden on Mobile) -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#about" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">من نحن</a>
+                <a href="#vision" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">رؤيتنا</a>
+                <a href="#future-programs" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">برامجنا المستقبلية</a>
+                <a href="#roadmap" class="py-4 px-3 text-gray-800 hover:text-purple-500 transition duration-300">خارطتنا</a>
+                <a href="#contact" class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition duration-300">تواصل معنا</a>
             </div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">من نحن</a>
+        <a href="#vision" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">رؤيتنا</a>
+        <a href="#future-programs" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">برامجنا المستقبلية</a>
+        <a href="#roadmap" class="block py-2 px-4 text-gray-800 hover:bg-gray-100">خارطتنا</a>
+        <a href="#contact" class="block py-2 px-4 bg-purple-500 text-white hover:bg-purple-600">تواصل معنا</a>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="hero-section h-screen flex items-center justify-center text-white">
@@ -90,7 +109,8 @@
             <h1 class="text-6xl font-bold mb-6">جمعية اطفال طيبة</h1>
             <p class="text-2xl mb-10">نبدأ رحلتنا لبناء مستقبل أفضل لأطفال المدينة المنورة</p>
             <div class="space-x-4">
-                <a href="#get-involved" class="bg-white text-purple-500 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition duration-300">شارك معنا</a>
+                <a href="#about" class="bg-white text-purple-500 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition duration-300">تعرف علينا</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfulJdMtCghUSKo20PrxmmRwO_B9CY3sN5ZFxaleqlauqke8g/viewform" target="_blank" class="bg-purple-500 text-white font-bold py-4 px-8 rounded-full hover:bg-purple-600 transition duration-300">انضم لفريقنا!</a>
             </div>
         </div>
     </section>
@@ -206,46 +226,34 @@
             <h2 class="text-4xl font-bold text-center mb-16 text-purple-600" data-aos="fade-up">برامج الجمعية</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                    <img src="/api/placeholder/150/150" alt="عضو الفريق 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <img src="https://img.freepik.com/free-photo/diverse-kids-reading-books_53876-146406.jpg?t=st=1729446338~exp=1729449938~hmac=11887c029e3d3c0947afb7bcf7ddfc0431e6a786b6b431da61bdbd47e24583fe&w=740" alt="كيدز العلوم" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز العلوم</h3>
-                    <p class="text-gray-600">يهدف إلى تشجيع حب الأطفال للعلوم من
-                        خلال تجارب وأنشطة تعليمية ممتعة</p>
+                    <p class="text-gray-600">يهدف إلى تشجيع حب الأطفال للعلوم من خلال تجارب وأنشطة تعليمية ممتعة</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/api/placeholder/150/150" alt="image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <img src="https://img.freepik.com/free-photo/school-boy-holding-delicious-apple_23-2148764015.jpg?t=st=1729446378~exp=1729449978~hmac=b3483b36c6e1062d42081deab7cd1cace5e57738a2b589aa7ccea117a1385413&w=996" alt="كيدز المعرفة" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز المعرفة</h3>
-                    <p class="text-gray-600">برنامـــج تعليمي يهـــدف إلى تعزيـــز المعرفة
-                        والتعلم النشـــط بين الأطفال من خلال ورش
-                        العمل والأنشطة التفاعلية</p>
+                    <p class="text-gray-600">برنامج تعليمي يهدف إلى تعزيز المعرفة والتعلم النشط بين الأطفال من خلال ورش العمل والأنشطة التفاعلية</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/api/placeholder/150/150" alt="image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <img src="https://img.freepik.com/free-photo/portrait-boy-checking-his-blood-pressure_23-2147905827.jpg?t=st=1729446491~exp=1729450091~hmac=36c52171ddeacb543a567e48fc4a14afdd7ff486ea1502047cd4e38deaf65547&w=360" alt="كيدز الصحة" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز الصحة</h3>
-                    <p class="text-gray-600">برنامـــج یهتـــم بصحـــة الأطفال مـــن خلال
-                        تشـــجيعهم على ممارســـة الرياضـــة وتناول
-                        الطعام الصحي.</p>
+                    <p class="text-gray-600">برنامج یهتم بصحة الأطفال من خلال تشجيعهم على ممارسة الرياضة وتناول الطعام الصحي.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                    <img src="/api/placeholder/150/150" alt="image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <img src="https://img.freepik.com/free-photo/happy-girls-stacking-their-hands-playing-against-sky_23-2148163915.jpg?t=st=1729446632~exp=1729450232~hmac=0010fccc41901042264389b8de20e849a214193f0105108151ee5bcf518fa2b5&w=360" alt="كيدز القيم" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز القيم</h3>
-                    <p class="text-gray-600">برنامــــج يســـعى لنشر وتعزيز القيم الإيجابية
-                        والأخلاقيــــــات بين الأطفال من خلال قصص
-                        وأنشطة تربوية.
-                        </p>
+                    <p class="text-gray-600">برنامج يسعى لنشر وتعزيز القيم الإيجابية والأخلاقيات بين الأطفال من خلال قصص وأنشطة تربوية.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/api/placeholder/150/150" alt="image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <img src="https://img.freepik.com/free-photo/child-painting-by-water-colors-paper-lying-floor_23-2148037909.jpg?t=st=1729446616~exp=1729450216~hmac=274568d01dcd1117e9a9b7338f8fe775ade272f4ec8a489599d001e7279c28bd&w=740" alt="كيدز الفنون" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold mb-2 text-purple-500">كيدز الفنون</h3>
-                    <p class="text-gray-600">يتناول هذا البرنامـــج الجانب الإبداعي والفني
-                        للأطفال من خلال ورش الفنون والموسيقى
-                        والرسم</p>
+                    <p class="text-gray-600">يتناول هذا البرنامج الجانب الإبداعي والفني للأطفال من خلال ورش الفنون والموسيقى والرسم</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/api/placeholder/150/150" alt="image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <img src="https://img.freepik.com/free-photo/teacher-helping-kids-classroom_23-2148892768.jpg?w=740&t=st=1710943346~exp=1710943946~hmac=3f7a47c42f49cd4fcc85cfd8b9f5692c8be3a92f15e504605fb05d0fb30e146f" alt="كيدزانيا" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold mb-2 text-purple-500">كيدزانيا</h3>
-                    <p class="text-gray-600">مســـارات تدريبية للأمهات والمتعاملين مع
-                        الأطفال لتعليمهم أحدث الأساليب للتعامل
-                        مع الطفولة</p>
+                    <p class="text-gray-600">مسارات تدريبية للأمهات والمتعاملين مع الأطفال لتعليمهم أحدث الأساليب للتعامل مع الطفولة</p>
                 </div>
             </div>
         </div>
@@ -256,19 +264,19 @@
 <!-- Partnerships Section -->
 <section id="partnership" class="py-20 bg-transparent static-bg-section">
     <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-16 text-white" data-aos="fade-up">شراكتنا</h2>
+        <h2 class="text-4xl font-bold text-center mb-16 text-white" data-aos="fade-up">شركائنا</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-4 text-white">شريك 1</h3>
-                <p class="text-gray-300">وصف الشريك 1</p>
+                <h3 class="text-2xl font-bold mb-4 text-white">المدارس</h3>
+                <p class="text-gray-300">الابتدائية و المتوسطة</p>
             </div>
             <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-2xl font-bold mb-4 text-white">شريك 2</h3>
-                <p class="text-gray-300">وصف الشريك 2</p>
+                <h3 class="text-2xl font-bold mb-4 text-white">الاخصائيين</h3>
+                <p class="text-gray-300">التربويين والباحثين في مجال الاطفال</p>
             </div>
             <div class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-2xl font-bold mb-4 text-white">شريك 3</h3>
-                <p class="text-gray-300">وصف الشريك 3</p>
+                <h3 class="text-2xl font-bold mb-4 text-white">الاباء والامهات</h3>
+                <p class="text-gray-300">المهتمين بتطوير ابنائهم</p>
             </div>
         </div>
     </div>
@@ -427,6 +435,14 @@
     AOS.init({
         duration: 1000,
         once: true
+    });
+</script>
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
     });
 </script>
 </body>
